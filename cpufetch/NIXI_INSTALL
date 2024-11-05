@@ -1,0 +1,4 @@
+CHANGEDIRECTORY cpufetch
+COPY cpufetch ~/.nixi/cpufetch
+COPY cpufetch.1 ~/.nixi/cpufetch.1
+COPY LICENSE ~/.nixi/LICENSE
