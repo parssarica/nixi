@@ -535,7 +535,7 @@ int refresh(void)
     curl = curl_easy_init();
     if(curl)
     {
-        curl_easy_setopt(curl, CURLOPT_URL, "localhost:8000/packages.db");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/parssarica/nixi/refs/heads/main/packages.db");
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, fwrite);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, fopen(expand_tilde("~/.nixi/packages.db"), "wb"));
         res = curl_easy_perform(curl);
