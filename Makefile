@@ -12,6 +12,8 @@ $(TARGET): $(OBJECTS)
 
 clean:
 	rm -f $(OBJECTS) $(TARGET)
+install:
+	cp nixi /usr/bin
 
 # Phony targets
 .PHONY: all clean
